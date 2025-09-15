@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libshot"
+version = "0.1.0"
+authors = [
+  { name="Gemini", email="gemini@google.com" },
+]
+description = "A simple, unified, Wayland/X11-agnostic screen capture library for Python on Linux."
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.8"
+keywords = ["screenshot", "capture", "wayland", "x11", "linux", "screen", "mss", "dbus"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia :: Graphics :: Capture :: Screen Capture",
+]
+dependencies = [
+    "mss",
+    "jeepney",
+    "Pillow",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gemini/libshot"
+"Bug Tracker" = "https://github.com/gemini/libshot/issues"

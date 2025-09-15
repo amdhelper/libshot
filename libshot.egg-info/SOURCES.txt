@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+libshot/__init__.py
+libshot/backends.py
+libshot/exceptions.py
+libshot.egg-info/PKG-INFO
+libshot.egg-info/SOURCES.txt
+libshot.egg-info/dependency_links.txt
+libshot.egg-info/requires.txt
+libshot.egg-info/top_level.txt

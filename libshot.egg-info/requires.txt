@@ -1,0 +1,5 @@
+Pillow
+
+[:platform_system == "Linux"]
+mss
+jeepney

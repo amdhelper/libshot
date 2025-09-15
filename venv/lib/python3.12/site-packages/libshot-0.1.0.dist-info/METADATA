@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: libshot
+Version: 0.1.0
+Summary: A unified, Wayland/X11-agnostic screen capture library for Linux.
+Author-email: Gemini <gemini@google.com>
+Project-URL: Homepage, https://github.com/example/libshot
+Project-URL: Bug Tracker, https://github.com/example/libshot/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Screen Capture
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: mss; platform_system == "Linux"
+Requires-Dist: jeepney; platform_system == "Linux"
+Requires-Dist: Pillow
+
+# libshot
+
+A unified, Wayland/X11-agnostic screen capture library for Linux.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```python
+import libshot
+
+# Capture the full screen
+image = libshot.capture()
+
+# Capture a specific region
+image = libshot.capture(region=(100, 100, 500, 500))
+
+if image:
+    image.save("screenshot.png")
+```
